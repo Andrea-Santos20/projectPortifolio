@@ -64,9 +64,9 @@ body {
 
 .presentation__content__title-photo {
     display: flex;
-    justify-content: space-between;
+    justify-content: evenly;
     align-items: center;
-    gap: 82px;
+    gap: 20px;
 }
 
 .presentation__content__title {
@@ -74,6 +74,19 @@ body {
     font-size: 2.25rem;
     font-family: var(--fonte-terciaria);
     margin: 1.5rem auto 1.5rem auto;
+}
+
+.presentation_photo {
+    border-radius: 300px;
+    border: 10px solid var(--cor-terciaria);      
+    cursor: pointer;
+    margin-top: 50px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;   
+}
+
+.presentation_photo:hover {
+    transform: scale(1.1); 
 }
 
 .title-emphasis{
@@ -84,7 +97,7 @@ body {
 .presentation__content__text {
     text-align: justify;
     font-size: 1.7rem;
-    font-family: var(--fonte-secundaria);
+    font-family: var(--font-secundaria);
     margin: 0.8rem auto 1rem auto;
 }
 
@@ -106,32 +119,6 @@ body {
     font-weight: 400;
     font-family: var(--font-primaria);
     margin-top: 0.5rem;      
-}
-
-.presentation__lista {
-    list-style: none;
-}
-
-.presentation__lista__desord__linguagem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;   
-}
-
-.presentation__lista__linguagem {
-    //width: 100%;
-    font-size: 1.7rem;
-    font-family: var(--font-terciaria);
-    color: var(--cor-emphasis);
-    font-weight: 700;
-    gap: 50px;
-}
-
-.presentation__lista__curso {
-    font-size: 1.5rem;
-    font-family: var(--font-terciaria);
-    margin: 0.5rem;    
 }
 
 .presentation__links__nav {
@@ -161,17 +148,41 @@ body {
     transform: scale(1.2); 
 }
 
-.presentation_photo {
-    border-radius: 300px;
-    border: 6px solid var(--cor-terciaria);      
-    cursor: pointer;
-    //margin-top: 80px;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;   
+ .presentation__project {
+    align-items: center;
+    list-style: none;    
+    font-size: 1.7rem;   
+    margin: 5rem 0 0 1rem;
 }
 
-.presentation_photo:hover {
-    transform: scale(1.1); 
+.presentation__project span {
+    color: var(--cor-emphasis);
+}
+
+.presentation__lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    list-style: none;   
+    font-size: 1.5rem;
+    gap: 20px;
+}
+
+.presentation__lista__linguagem {    
+    font-size: 1.7rem;
+    font-family: var(--font-terciaria);
+    color: var(--cor-emphasis);
+    font-weight: 700;   
+}
+
+.presentation__lista__curso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
 }
 
 .baseboard {    
@@ -197,7 +208,8 @@ body {
 
     .presentation__content__tile-photo {
         flex-direction: column-reverse;
-        //padding: 5%;
+        gap: 5px;
+       
     }
 
     .presentation {
@@ -206,11 +218,19 @@ body {
     }
 
     .presentation__content {
-        width: 95%;
+        width: 90%;
     }    
 
     .presentation_photo {
-        width: 119%;
+        width: 100%;
+        margin-right: 55px;
+        
     }
-}   
+
+    .presentation__lista__linguagem, .presentation__lista__curso {
+        width: 25%;
+        display: grid;
+        
+    }
+}       
 
