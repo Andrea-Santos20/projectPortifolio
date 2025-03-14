@@ -116,12 +116,24 @@ body {
     text-align: justify;
     font-size: 0.9rem;
     font-family: var(--font-terciaria);
-    margin: auto;
+    margin-top: 15px;
+
 }
 
 .presentation__content__text span {
     color: var(--cor-terciaria);
     font-weight: bold;
+}
+
+.informal__project {
+    margin-top: 15px;
+}
+
+.description__projects {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: justify;
 }
 
 .presentation__links {
@@ -151,12 +163,12 @@ body {
     align-items: center;    
     gap: 65px;0
     width: 15%;
-     border: 2px solid  var(--cor-hover-links);    
+     border: 2px solid var(--cor-hover-links);    
     text-align: center;
     border-radius: 8px;
     font-size: 1rem;
     font-weight: 600;
-    padding: 20px 0;    
+    padding: 20px;    
     text-decoration: none;
     color: var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
@@ -189,6 +201,7 @@ body {
     font-style: italic;
 }
 
+
 .presentation__lista {
     display: flex;    
     justify-content: space-between;
@@ -198,22 +211,34 @@ body {
     font-size: 1rem;
     gap: 20px;
 
-    color: #fff;
+    color: #49446b;
 }
 
 .presentation__lista__linguagem {    
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-family: var(--font-terciaria);
     color: var(--cor-emphasis);
     font-weight: 700;   
 }
 
-.presentation__lista__curso {
+.presentation__list__course {
     width: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;   
+}
+
+.language__framework {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.presentation__list__tecnologies {
+    list-style: none;
+    font-family: var(--font-terciaria);
+    font-size: 0.85rem;
 }
 
 .baseboard {    
